@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="widget" onclick="spawnHearts()">
+
+  <!-- AYARLAR -->
+  <div class="settings" onclick="toggleMenu(event)">⚙</div>
+
+  <div class="menu" id="menu">
+    <div onclick="setTZ('Europe/Istanbul')">Türkiye</div>
+    <div onclick="setTZ('Europe/Riga')">Letonya</div>
+  </div>
+
+  <!-- SAAT -->
+  <div class="clock" id="clock">00:00</div>
+
+  <!-- GÖRSELLER -->
+  <div class="image-box">
+    <img id="img1" src="bakisma(1).png" alt="bakisma" />
+    <img id="img2" src="kiss.png" alt="kiss" />
+  </div>
+
+  <!-- PLAY -->
+  <button class="play" onclick="openSpotify(event)">PLAY</button>
+
+  <!-- KALPLER -->
+  <canvas id="hearts"></canvas>
+</div>
+
+<!-- SES -->
+<audio id="pop" src="lofi-pop.mp3"></audio>
+
+<script src="main.js"></script>
+</body>
+</html>
